@@ -30,7 +30,7 @@ $task.fetch(myRequest).then(response => {
     //console.log(response.statusCode + "\n\n" + response.body);
     var response_body = JSON.parse(response.body);
     //console.log(response_body.data.token)
-    var token = String(response_body.data.token);
+    var token = JSON.stringify(response_body.data.token);
     // console.log(token);
     // return response_body.data.token;
     return token;
