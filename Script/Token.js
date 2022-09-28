@@ -31,15 +31,16 @@ $task.fetch(myRequest).then(response => {
     var response_body = JSON.parse(response.body);
     //console.log(response_body.data.token)
     var token = response_body.data.token;
-    console.log(token);
-    //return response_body.data.token;
-    //return token;
-    $done();
+    // console.log(token);
+    // return response_body.data.token;
+    return token;
+    // $done();
 }, reason => {
     console.log(reason.error);
-    $done();
+    // $done();
 });
 }
 
-//console.log(get_token);
-get_token();
+console.log(get_token);
+// get_token();
+$done();
