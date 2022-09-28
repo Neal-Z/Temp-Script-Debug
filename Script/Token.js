@@ -41,6 +41,6 @@ $task.fetch(myRequest).then(response => {
 });
 }
 
-console.log(get_token);
+console.log(get_token());
 // get_token();
 $done();
