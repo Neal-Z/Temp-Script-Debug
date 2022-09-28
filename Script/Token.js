@@ -40,7 +40,7 @@ $task.fetch(myRequest).then(response => {
     // $done();
 });
 }
-
-console.log(get_token());
+var output = get_token()
+console.log(output);
 // get_token();
 $done();
